@@ -1,0 +1,15 @@
+.content {
+    width: 100%;
+}
+
+.panel-button {
+    width: 48%;
+}
+
+@media screen and (min-width: 900px) {
+    .content {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
