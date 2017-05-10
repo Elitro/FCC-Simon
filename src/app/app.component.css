@@ -22,8 +22,6 @@
 .board {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    height: 90%;
 }
 
 .title {
@@ -48,6 +46,8 @@
 
 @media screen and (max-width: 500px) {
     .board {
+        width: 300px;
+        height: 300px;
         max-width: 300px;
         max-height: 300px;
         padding: 0px;
@@ -71,7 +71,7 @@
 
     .content {
         width: 900px;
-        height: 900px;
+        /*height: 900px;*/
         margin-left: auto;
         margin-right: auto;
     }
