@@ -22,6 +22,7 @@
 .board {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .title {
@@ -42,6 +43,15 @@
     width: 100%;
     height: 1em;
     background-color: #2C2C2C;
+}
+
+.menu {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background-color: pink;
 }
 
 @media screen and (max-width: 500px) {
