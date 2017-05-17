@@ -52,6 +52,7 @@
     width: 50%;
     height: 50%;
     background-color: pink;
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 500px) {

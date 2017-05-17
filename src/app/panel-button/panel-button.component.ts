@@ -1,3 +1,4 @@
+import { Generic } from './../app.domain';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -7,11 +8,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PanelButtonComponent implements OnInit {
 
-  @Input() panelColor: string;
+  @Input() panel: Generic.Type.Panel;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  playAudio() {
+    const audio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
+    audio.play();
   }
 
 }
