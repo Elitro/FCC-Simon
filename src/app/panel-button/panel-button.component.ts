@@ -9,15 +9,17 @@ import { Component, OnInit, Input } from '@angular/core';
 export class PanelButtonComponent implements OnInit {
 
   @Input() panel: Generic.Type.Panel;
+  audio: any;
 
-  constructor() { }
+  constructor() {
+    this.audio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
+  }
 
   ngOnInit() {
   }
 
   playAudio() {
-    const audio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
-    audio.play();
+    this.audio.play();
   }
 
 }
